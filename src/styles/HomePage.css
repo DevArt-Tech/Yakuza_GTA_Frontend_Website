@@ -1,0 +1,85 @@
+/* src/styles/HomePage.css */
+.HomePage {
+    position: relative;
+    height: 100vh; /* Altura completa de la ventana */
+    overflow: hidden; /* Ocultar cualquier contenido fuera de la vista */
+    margin: 0; /* Asegúrate de que no haya márgenes */
+    padding: 0; /* Asegúrate de que no haya padding */
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Asegúrate de que el video esté detrás del contenido */
+    transform: translate(-50%, -50%); /* Centrar el video */
+}
+
+.menu {
+    position: absolute;
+    top: 0; /* Posicionar en la parte superior */
+    right: 0; /* Alinear a la derecha */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: flex-end; /* Alinear contenido a la derecha */
+    background-color: #ffffff; /* Fondo blanco sin transparencia */
+    padding: 10px; /* Espaciado interno */
+    z-index: 1; /* Asegúrate de que el menú esté encima del video */
+    width: 100%; /* Asegurar que la barra ocupe todo el ancho de la pantalla */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+.volume-slider {
+    margin-right: 10px; /* Espacio pequeño a la derecha */
+    appearance: none; /* Eliminar estilo por defecto */
+    width: 150px; /* Ajustar el ancho del slider */
+    height: 8px; /* Ajustar la altura del slider */
+    background: red; /* Color rojo para el slider */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Eliminar estilo por defecto */
+    appearance: none;
+    width: 20px; /* Ancho del thumb */
+    height: 20px; /* Alto del thumb */
+    background: black; /* Color negro para el thumb */
+    border-radius: 50%; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+}
+
+.menu-button {
+    background-color: black; /* Fondo negro para el botón "Entrar" */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambiar fondo al pasar el mouse */
+}
+
+.postular {
+    background-color: #ff0000; /* Color de fondo rojo */
+    border: none; /* Sin borde */
+    margin-left: 10px; /* Espacio a la izquierda */
+}
+
+.footer {
+    position: absolute; /* Posicionamiento absoluto */
+    bottom: 0; /* Alinear al fondo de la página */
+    left: 0; /* Alinear a la izquierda */
+    width: 100%; /* Ancho completo */
+    background-color: #ffffff; /* Fondo blanco sin transparencia */
+    text-align: center; /* Centrar texto */
+    padding: 10px 0; /* Espaciado interno */
+    z-index: 1; /* Asegúrate de que el footer esté encima del video */
+}
