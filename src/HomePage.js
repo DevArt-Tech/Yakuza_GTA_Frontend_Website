@@ -1,6 +1,7 @@
 // src/pages/HomePage.js
 import React, { useRef, useState, useEffect } from 'react';
 import './styles/HomePage.css'; // Asegúrate de tener este archivo
+import { Link } from 'react-router-dom';
 import { Slider, IconButton, Button } from '@mui/material';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import VolumeDownIcon from '@mui/icons-material/VolumeDown';
@@ -36,10 +37,12 @@ const HomePage = () => {
       {/* Barra de menú */}
       <div className="menu">
         {/* Contenedor de las imágenes */}
-        <div className="image-container">
-          <img src="/yakuza-logo-circular.PNG" alt="Left" className="image-left" />
-          <img src="/yakuza-logo.png" alt="Right" className="image-right" />
-        </div>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <div className="image-container">
+            <img src="/yakuza-logo-circular.PNG" alt="Left" className="image-left" />
+            <img src="/yakuza-logo.png" alt="Right" className="image-right" />
+          </div>
+        </Link>
 
         {/* Control de volumen */}
         <div className="volume-slider-container">

@@ -1,6 +1,7 @@
 import './styles/App.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'; // Asegúrate de importar BrowserRouter
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import HomePage from './HomePage'; // Importa tu página principal
 
@@ -13,6 +14,8 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <ThemeProvider theme={theme}>
-        <HomePage />
+        <BrowserRouter>
+            <HomePage />
+        </BrowserRouter>
     </ThemeProvider>
 );
