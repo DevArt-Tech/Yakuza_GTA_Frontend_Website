@@ -2,7 +2,7 @@ import './styles/App.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import HomePage from './App'; // Importa tu página principal
+import HomePage from './HomePage'; // Importa tu página principal
 
 const theme = createTheme({
     typography: {
