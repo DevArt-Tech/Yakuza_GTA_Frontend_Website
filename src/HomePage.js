@@ -1,4 +1,4 @@
-// src/pages/HomePage.js
+// src/HomePage.js
 import React, { useRef, useState, useEffect } from 'react';
 import './styles/HomePage.css'; // Asegúrate de tener este archivo
 import { Link } from 'react-router-dom';
@@ -90,10 +90,17 @@ const HomePage = () => {
 
       {/* Footer */}
       <div className="footer">
+      <Link to="/sign-in" style={{ textDecoration: 'none' }}>
         <Button variant="contained" className="menu-button entrar">Entrar</Button>
+      </Link>
+      <Link to="/sign-up" style={{ textDecoration: 'none' }}>
         <Button variant="contained" className="menu-button postular">Postular</Button>
+      </Link>
       </div>
     </div>
+
+
+
   );
 };
 
